@@ -172,6 +172,7 @@ small {
     }
 
     .content {
+        margin-top: 7rem;
         display: block;
         text-align: center;
     }

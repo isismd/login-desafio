@@ -1,0 +1,198 @@
+/* main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* cabeçalho */
+header {
+    margin-top: 2rem;
+    margin-right: 3rem;
+    text-align: right;
+}
+
+header span {
+    color: #FFB400;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header span:hover {
+    color: #F04E23;
+}
+
+
+/* conteúdo */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 90vh;
+}
+
+.content img {
+    width: 35vw;
+}
+
+/* formulário */
+.login-area {
+    margin-left: 4rem;
+    width: 35vw;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+}
+
+.login-title span {
+    color: #FFB400;
+    font-weight: bold;
+}
+
+form {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 4rem;
+}
+
+input:focus {
+    outline: unset;
+}
+
+#email {
+    background: url(images/icon-email.png) no-repeat scroll 7px 7px;
+}
+
+#password {
+    background: url(images/icon-cadeado.png) no-repeat scroll 7px 7px;
+}
+
+#email,
+#password {
+    background-size: 2rem;
+    background-position-y: center;
+    padding-left: 3.5rem;
+}
+
+/* customização de erro do formulário */
+small {
+    color: #F04E23;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem 1rem;
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.form-control.error input {
+    border: 1px solid #F04E23;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+/* botões */
+.buttons {
+    margin-top: 4rem;
+
+}
+
+.login-button {
+    float: right;
+    padding: 1.5rem;
+    width: 15rem;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    background-color: #FFB400;
+    border-radius: 20px;
+    border: unset;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #F04E23;
+}
+
+.forgot-password {
+    float: left;
+    border: unset;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: unset;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+/* responsividade */
+@media (max-width: 1000px) {
+    .login-button {
+        width: 100%;
+    }
+
+    .forgot-password {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+
+    .content img {
+        width: 60vw;
+    }
+
+    .content {
+        display: block;
+        text-align: center;
+    }
+
+    .login-area {
+        margin: auto;
+        width: 60vw;
+    }
+
+    .form-control.error small {
+        position: unset;
+        float: left;
+    }
+}
+
+@media (max-width: 550px) {
+    .content img {
+        width: 75vw;
+    }
+
+    .login-area {
+        width: 75vw;
+    }
+}
